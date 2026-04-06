@@ -10,21 +10,21 @@ export default function Navbar() {
             <nav className="max-w-[1920px] h-[100px] mx-auto px-8 flex items-center justify-between">
 
                 {/* Logo */}
-                <span 
+                <span
                     className="font-gerbil font-normal select-none flex items-center justify-center text-black"
-                    style={{ 
-                        width: '201px', 
-                        height: '46px', 
-                        fontSize: '28px', 
-                        lineHeight: '46px', 
-                        letterSpacing: '0%' 
+                    style={{
+                        width: '201px',
+                        height: '46px',
+                        fontSize: '28px',
+                        lineHeight: '46px',
+                        letterSpacing: '0%'
                     }}
                 >
                     Elementum
                 </span>
 
                 {/* Center nav links — desktop */}
-                <ul 
+                <ul
                     className="hidden md:flex items-center justify-between list-none p-0 m-0"
                     style={{ width: '533px', height: '24px' }}
                 >

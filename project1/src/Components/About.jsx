@@ -10,7 +10,6 @@ const About = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    border: '1px solid black',
                     opacity: 1,
                     alignItems: 'center',
                     position: 'relative'
@@ -57,8 +56,7 @@ const About = () => {
                             transform: 'rotate(0deg)',
                             opacity: 1,
                             display: 'flex',
-                            justifyContent: 'space-between',
-                            border: '2px solid blue'
+                            justifyContent: 'space-between'
                         }}
                     >
                         {index === 0 && (
@@ -69,12 +67,11 @@ const About = () => {
                                         height: '340px',
                                         transform: 'rotate(0deg)',
                                         opacity: 1,
-                                        border: '2px solid red',
                                         position: 'relative',
                                         alignSelf: 'center'
                                     }}
                                 >
-                                    {/* Small red glow placed upper left of the text */}
+                                    {/* Small red glow placed between image and text */}
                                     <div
                                         style={{
                                             position: 'absolute',
@@ -83,8 +80,9 @@ const About = () => {
                                             background: '#FF7171',
                                             filter: 'blur(80px)',
                                             opacity: 0.6,
-                                            top: '-100px',
-                                            left: '50px',
+                                            top: '5%',
+                                            right: '-330px',
+                                            transform: 'translateY(-50%)',
                                             zIndex: 0,
                                             borderRadius: '50%',
                                             pointerEvents: 'none'
@@ -186,7 +184,7 @@ const About = () => {
                                         }}
                                     >
                                         <img
-                                            src="./public/meeting.jpg"
+                                            src="./meeting.jpg"
                                             alt="Meeting"
                                             style={{
                                                 width: '100%',
@@ -228,7 +226,7 @@ const About = () => {
                                         }}
                                     >
                                         <img
-                                            src="./public/img2.png"
+                                            src="./img2.png"
                                             alt="img2"
                                             style={{
                                                 width: '100%',
@@ -256,12 +254,11 @@ const About = () => {
                                     style={{
                                         width: '706px',
                                         height: '348px',
-                                        border: '2px solid red',
                                         transform: 'rotate(0deg)',
                                         opacity: 1,
                                         marginTop: '160px',
                                         position: 'relative',
-                                        right: '130px' // Moves the rectangle towards the left side
+                                        right: '130px'
                                     }}
                                 >
                                     <div
@@ -293,7 +290,7 @@ const About = () => {
                                             }}>
                                                 See
                                             </span>
-                                            how we can<br />
+                                            how we <span className="underline-yellow">can</span><br />
                                             help you progress
                                         </h2>
                                         <p style={{
